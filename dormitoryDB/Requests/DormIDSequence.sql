@@ -1,0 +1,11 @@
+CREATE SEQUENCE dormID AS BIGINT START WITH 1025
+    INCREMENT BY 1
+    MINVALUE 0
+    MAXVALUE 4294967296
+    CACHE
+
+SELECT next value for dormID;
+
+SELECT *
+FROM sys.sequences
+WHERE name = 'dormID'
